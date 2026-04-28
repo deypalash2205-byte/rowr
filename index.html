@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROWR - LOUD BOLD ORIGINAL</title>
+  <meta name="description" content="ROWR. We don't do average. Neither should you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="nav-left">
+      <a href="#" aria-label="ROWR Home" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+        <img src="logo 1.png" alt="ROWR Logo" class="brand-logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#" class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">Home</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#about" class="nav-link">About ROWR</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </div>
+      <div class="nav-actions">
+        <button class="action-btn" aria-label="User Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </button>
+        <button class="action-btn" aria-label="Shopping Cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cart-icon">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#" class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">Home</a>
+    <a href="#video" class="nav-link">Video</a>
+    <a href="#products" class="nav-link">Products</a>
+    <a href="#about" class="nav-link">About ROWR</a>
+    <a href="#contact" class="nav-link">Contact Us</a>
+  </div>
+
+  <main class="hero-section">
+    <div class="hero-left">
+      <h1 class="hero-title">
+        <span class="loud">LOUD</span>
+        <span class="bold">BOLD</span>
+        <span class="original">ORIGINAL</span>
+      </h1>
+
+      <p class="hero-subtitle">THIS IS ROWR.</p>
+
+      <div class="hero-caption">
+        <p>WE DON'T DO AVERAGE.</p>
+        <p>NEITHER SHOULD YOU.</p>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="carousel-container">
+        <button class="carousel-control prev" aria-label="Previous Product">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+
+        <div class="product-display">
+          <img src="cup 1.png" alt="ROWR Cup 1" id="carousel-image" class="product-image">
+          <div class="product-shadow"></div>
+        </div>
+
+        <button class="carousel-control next" aria-label="Next Product">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="carousel-pagination">
+        <button class="dot active" aria-label="Go to slide 1" data-index="0"></button>
+        <button class="dot" aria-label="Go to slide 2" data-index="1"></button>
+        <button class="dot" aria-label="Go to slide 3" data-index="2"></button>
+      </div>
+    </div>
+  </main>
+
+  <section class="video-section-wrapper" id="video">
+    <img src="s1.png" alt="Left Design Element" class="deco-element top-left" />
+    <img src="s2.png" alt="Right Design Element" class="deco-element bottom-right" />
+
+    <div class="video-section-content">
+      <div class="video-container">
+        <video src="video.mp4" autoplay muted loop playsinline class="brand-video" id="brand-video"></video>
+
+        <button id="mute-toggle" class="mute-toggle" aria-label="Toggle Sound">
+          <!-- SVG for Muted (Default) -->
+          <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <!-- SVG for Unmuted (Hidden initially) -->
+          <svg class="icon-unmuted" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+            style="display: none;">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section-wrapper" id="products">
+    <div class="products-container">
+      <h2 class="products-heading">PRODUCTS</h2>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="c1.png" alt="ROWR Bold" class="product-card-image" />
+          <h3 class="product-name">ROWR Bold</h3>
+          <p class="product-desc">High-octane liquid adrenaline. Not for the faint of heart.</p>
+          <div class="product-footer">
+            <span class="product-price">₹199</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="c2.png" alt="Rowr Robusta" class="product-card-image" />
+          <h3 class="product-name">ROWR Robusta</h3>
+          <p class="product-desc">Dark, earthy, and unapologetically strong. The rawest hit of pure coffee.</p>
+          <div class="product-footer">
+            <span class="product-price">₹199</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="c3.png" alt="Rowr Arabica" class="product-card-image" />
+          <h3 class="product-name">ROWR Arabica</h3>
+          <p class="product-desc">Smooth but lethal. A refined flavor profile with an aggressive edge.</p>
+          <div class="product-footer">
+            <span class="product-price">₹199</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="c4.png" alt="Rowr Coffee Blend Powder (250g)" class="product-image-zoomed" />
+          </div>
+          <h3 class="product-name">ROWR Coffee Blend Powder (250g)</h3>
+          <p class="product-desc">The perfect chaos. Our signature house mix engineered for maximum impact.</p>
+          <div class="product-footer">
+            <span class="product-price">₹650</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="c5.png" alt="Rowr Roasted Coffee Powder (250g)" class="product-image-zoomed" />
+          </div>
+          <h3 class="product-name">ROWR Roasted Coffee Powder (250g)</h3>
+          <p class="product-desc">Fire-roasted to perfection. Deep, smoky notes that kick down the door.</p>
+          <div class="product-footer">
+            <span class="product-price">₹700</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-image-wrapper">
+            <img src="c6.png" alt="Rowr Bold Powder (250g)" class="product-image-zoomed" />
+          </div>
+          <h3 class="product-name">ROWR Bold Powder (250g)</h3>
+          <p class="product-desc">Our highest-voltage fuel, bagged. Brew it strong, take no prisoners.</p>
+          <div class="product-footer">
+            <span class="product-price">₹750</span>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section-wrapper" id="about">
+    <div class="about-container">
+      <div class="about-tag">ABOUT ROWR</div>
+      <h2 class="about-heading">WE OPERATE ON LOUD. BOLD. ADRENALINE.</h2>
+      <p class="about-body">Forget delicate notes and subtle undertones. This is high-octane fuel for the obsessed. We don’t roast for comfort; we roast for power. ROWR is raw caffeine engineered for those who grind harder and live louder.</p>
+      <p class="about-quote">'Sleep is overrated. Power isn’t.'</p>
+    </div>
+  </section>
+
+  <footer class="footer-wrapper" id="contact">
+    <div class="footer-top">
+      <a href="mailto:contact@rowr.coffee" class="footer-link">Say Hello: contact@rowr.coffee</a>
+      <a href="#" class="footer-link">Privacy Policy</a>
+      <div class="footer-socials">
+        <span>Follow us on:</span>
+        <a href="#" aria-label="Instagram" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" aria-label="X (Twitter)" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 ROWR. All rights reserved.</p>
+    </div>
+    
+    <img src="logo 1.png" alt="ROWR Logo" class="footer-logo" />
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
